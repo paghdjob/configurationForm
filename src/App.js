@@ -1,13 +1,19 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+const Loading = lazy(() => import("./component/loading"));
+const AppRouting = lazy(() => import("./routing/index"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>demo 14</p>
-      </header>
-    </div>
+    <React.Fragment>
+      <BrowserRouter>
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="*" element={<AppRouting />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </React.Fragment>
   );
 }
 
