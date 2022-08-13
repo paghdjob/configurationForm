@@ -1,0 +1,88 @@
+[
+  {
+    "formName": "profileform",
+    "action": "#",
+    "method": "GET",
+    "classNames": "row g-3 was-validated",
+    "title": "Personal Information",
+    "subtitile": "",
+    "text": "Sign up Details",
+    "fields": [
+      {
+        "field": "InputBox",
+        "data": {
+          "label": "Telephone",
+          "type": "number",
+          "fieldname": "telephone",
+          "parentClass": "col-md-6",
+          "classNames": "form-control",
+          "id": "",
+          "placeholder": "please enter your telephone number",
+          "defaultValue": "",
+          "min": 1,
+          "max": 9999999999,
+          "minLength": 4,
+          "maxLength": 30,
+
+          "readonly": false,
+          "required": true,
+          "title": "emailid"
+        }
+      },
+      {
+        "field": "InputBox",
+        "data": {
+          "label": "Mobile No",
+          "type": "number",
+          "fieldname": "mobileno",
+          "parentClass": "col-md-6",
+          "classNames": "form-control",
+          "id": "",
+          "placeholder": "please enter your mobile number",
+          "defaultValue": "",
+          "min": 1,
+          "max": 9999999999,
+          "minLength": 4,
+          "maxLength": 30,
+
+          "readonly": false,
+          "required": true,
+          "title": "mobileno"
+        }
+      },
+      {
+        "field": "InputBox",
+        "data": {
+          "label": "Country Name",
+          "type": "text",
+          "fieldname": "countryname",
+          "parentClass": "col-md-6",
+          "classNames": "form-control",
+          "id": "",
+          "placeholder": "please enter your contryname",
+          "defaultValue": "",
+          "min": 1,
+          "max": 9999999999,
+          "minLength": 4,
+          "maxLength": 30,
+
+          "readonly": false,
+          "required": true,
+          "title": "countryname"
+        }
+      },
+      {
+        "field": "ButtonBox",
+        "data": {
+          "type": "button",
+          "fieldname": "buttonLogin",
+          "parentClass": "col-md-12 mt-2",
+          "classNames": "btn btn-primary",
+          "id": "",
+          "defaultValue": "Save",
+          "readonly": false
+        }
+      }
+    ]
+  }
+]
