@@ -71,7 +71,7 @@ const multiFormData = [
           title: "countryname",
         },
       },
-      /*   {
+    /*   {
         field: "CheckBox",
         data: {
           label: "framework list",

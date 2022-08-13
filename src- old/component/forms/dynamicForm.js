@@ -6,7 +6,6 @@ import {
   TextareaBox,
   DateBox,
   FileBox,
-  SelectBox
 } from "./index";
 
 const DynamicForm = (props) => {
@@ -17,7 +16,6 @@ const DynamicForm = (props) => {
     TextareaBox: TextareaBox,
     DateBox: DateBox,
     FileBox: FileBox,
-    SelectBox: SelectBox
   };
 
   return (
