@@ -1,9 +1,10 @@
 {
   "name": "form-generator-json-app",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Form processor for filter and validation form data",
   "keywords": [
-    "form generator json", "Form Json App"
+    "form generator json",
+    "Form Json App"
   ],
   "author": "paghdjob <paghdjob@gmail.com>",
   "repository": {
