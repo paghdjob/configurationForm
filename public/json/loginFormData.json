@@ -1,0 +1,77 @@
+[
+  {
+    "formName": "loginform",
+    "action": "#",
+    "method": "GET",
+    "classNames": "row g-3 was-validated",
+    "title": "Login Details",
+    "subtitile": "Login Details",
+    "text": "Login Details",
+    "fields": [
+      {
+        "field": "InputBox",
+        "data": {
+          "label": "Username",
+          "type": "text",
+          "fieldname": "username",
+          "parentClass": "col-md-12",
+          "classNames": "form-control",
+          "id": "",
+          "placeholder": "please enter your username/email id",
+          "defaultValue": "",
+          "min": 4,
+          "max": 30,
+          "minLength": 4,
+          "maxLength": 30,
+          "readonly": false,
+          "required": true,
+          "title": "Username"
+        }
+      },
+      {
+        "field": "InputBox",
+        "data": {
+          "label": "Password",
+          "type": "password",
+          "fieldname": "password",
+          "parentClass": "col-md-12",
+          "classNames": "form-control",
+          "id": "",
+          "placeholder": "please enter your password",
+          "defaultValue": "",
+          "min": 4,
+          "max": 30,
+          "minLength": 4,
+          "maxLength": 30,
+          "readonly": false,
+          "required": true,
+          "title": "password"
+        }
+      },
+      {
+        "field": "ButtonBox",
+        "data": {
+          "type": "button",
+          "fieldname": "buttonLogin",
+          "parentClass": "col-md-2 row m-2",
+          "classNames": "btn btn-primary",
+          "id": "",
+          "defaultValue": "Login In",
+          "readonly": false
+        }
+      },
+      {
+        "field": "ButtonBox",
+        "data": {
+          "type": "button",
+          "fieldname": "buttonCancel",
+          "parentClass": "col-md-2 row m-2",
+          "classNames": "btn btn-primary",
+          "id": "",
+          "defaultValue": "Cancel",
+          "readonly": false
+        }
+      }
+    ]
+  }
+]
