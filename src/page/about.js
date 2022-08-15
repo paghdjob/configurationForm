@@ -3,7 +3,10 @@ import multiFormData from "../multiFormData";
 import DynamicForm from "../component/forms/dynamicForm";
  
 function About() {
-  return <><DynamicForm multiFormData={multiFormData} /></>;
+  const formData = (data) => {
+    console.log("Data=>", data)
+  }
+  return <><DynamicForm multiFormData={multiFormData} data={formData} /></>;
 }
 
 export default About;

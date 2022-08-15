@@ -9,9 +9,14 @@ function Profile() {
       setMultiFormData(data);
   })
   },[])
+
+  const formData = (data) => {
+    console.log("Data=>", data)
+  }
+
   return (
     <div className="container">
-      <DynamicForm multiFormData={multiFormData} />
+      <DynamicForm multiFormData={multiFormData} data={formData} />
     </div>
   );
 }

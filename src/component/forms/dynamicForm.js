@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 import {
   InputBox,
   ButtonBox,
@@ -6,10 +7,22 @@ import {
   TextareaBox,
   DateBox,
   FileBox,
-  SelectBox
+  SelectBox,
 } from "./index";
 
 const DynamicForm = (props) => {
+  // const getName =
+  //   props &&
+  //   props.multiFormData &&
+  //   props.multiFormData &&
+  //   props.multiFormData[0] &&
+  //   props.multiFormData[0].formName;
+  const multiForms = useSelector((state) => state.multiForm.multiForm); // .multiForm[props.formName]
+  // let a = props.multiFormData[0];
+  // if(a && a.formName) {
+  //console.log("---multiForms--->", multiForms);
+  // }
+  // console.log("getName-->", getName);
   const components = {
     InputBox: InputBox,
     ButtonBox: ButtonBox,
@@ -17,8 +30,11 @@ const DynamicForm = (props) => {
     TextareaBox: TextareaBox,
     DateBox: DateBox,
     FileBox: FileBox,
-    SelectBox: SelectBox
+    SelectBox: SelectBox,
   };
+  useEffect(() => {
+    props.data(multiForms);
+  }, [multiForms]);
 
   return (
     <div className="container">
@@ -31,8 +47,8 @@ const DynamicForm = (props) => {
             </div>
             <div className="card-body">
               <form
-                // action={item.action}
-                // method={item.method}
+                action={item.action}
+                method={item.method}
                 name={item.formName}
                 className={item.classNames}
                 noValidate

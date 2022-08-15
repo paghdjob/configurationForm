@@ -1,10 +1,11 @@
 {
   "name": "form-generator-json-app",
   "version": "0.1.2",
-  "description": "Form processor for filter and validation form data",
+  "description": "Create a dynamic form using json file",
   "keywords": [
     "form generator json",
-    "Form Json App"
+    "Form Json App",
+    "Dynamic Form"
   ],
   "author": "paghdjob <paghdjob@gmail.com>",
   "repository": {

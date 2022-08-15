@@ -10,7 +10,7 @@ const TextareaBox = (props) => {
   const a = useSelector(
     (state) => state.multiForm
   );
-  console.log("---a--->", a);
+  // console.log("---a--->", a);
   const dispatch = useDispatch();
   // const myRef = useRef("");
 

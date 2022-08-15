@@ -8,7 +8,7 @@ const FileBox = (props) => {
   const multiForms = useSelector(
     (state) => state.multiForm.multiForm[props.formName]
   );
-  console.log("---multiForms--->", multiForms);
+  // console.log("---multiForms--->", multiForms);
   const dispatch = useDispatch();
   // const myRef = useRef("");
 
