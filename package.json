@@ -1,7 +1,7 @@
 {
   "name": "form-generator-json-app",
   "version": "0.1.2",
-  "description": "Create a dynamic form using json file",
+  "description": "library for generating forms dynamically using JSON.",
   "keywords": [
     "form generator json",
     "Form Json App",

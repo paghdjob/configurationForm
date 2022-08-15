@@ -4,7 +4,7 @@ import DynamicForm from "../component/forms/dynamicForm";
 
 function Signup() {
   const formData = (data) => {
-    console.log("Data=>", data)
+    console.log("form return data=>", data)
   }
   return (
     <div className="container">
