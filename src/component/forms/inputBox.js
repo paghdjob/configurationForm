@@ -7,9 +7,7 @@ const InputBox = (props) => {
   const multiForms = useSelector(
     (state) => state.multiForm.multiForm[props.formName]
   );
-  // console.log("---multiForms--->", multiForms);
   const dispatch = useDispatch();
-  // const myRef = useRef("");
 
   let {
     label,
@@ -24,7 +22,7 @@ const InputBox = (props) => {
     max,
     minLength,
     maxLength,
-    Pattern,
+//    pattern,
     readonly,
     required,
   } = props.info;
@@ -61,7 +59,7 @@ const InputBox = (props) => {
           max={max}
           minLength={minLength}
           maxLength={maxLength}
-          pattern={Pattern}
+          //  pattern={pattern}
           onChange={handle}
           required={required}
           disabled={readonly}

@@ -1,5 +1,5 @@
 /* "SelectBox" type support => SelectBox */
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { incrementByAmounts } from "../../store/multiFormStore";
 import ApiCall from "./api";
@@ -10,7 +10,7 @@ const SelectBox = (props) => {
   );
   const dispatch = useDispatch();
 
-  console.log("multiForms-->", multiForms);
+//  console.log("multiForms-->", multiForms);
   let {
     type,
     fieldname,

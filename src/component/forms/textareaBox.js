@@ -7,12 +7,7 @@ const TextareaBox = (props) => {
   const multiForms = useSelector(
     (state) => state.multiForm.multiForm[props.formName]
   );
-  const a = useSelector(
-    (state) => state.multiForm
-  );
-  // console.log("---a--->", a);
   const dispatch = useDispatch();
-  // const myRef = useRef("");
 
   let {
     label,
@@ -27,7 +22,7 @@ const TextareaBox = (props) => {
     rows,
     minLength,
     maxLength,
-    Pattern,
+    pattern,
     readonly,
     required,
   } = props.info;
@@ -65,7 +60,7 @@ const TextareaBox = (props) => {
           max={max}
           minLength={minLength}
           maxLength={maxLength}
-          pattern={Pattern}
+          pattern={pattern}
           onChange={handle}
           required={required}
           disabled={readonly}

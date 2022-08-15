@@ -23,7 +23,7 @@ const DateBox = (props) => {
     max,
     minLength,
     maxLength,
-    Pattern,
+    pattern,
     readonly,
     required,
   } = props.info;
@@ -58,7 +58,7 @@ const DateBox = (props) => {
           max={max}
           minLength={minLength}
           maxLength={maxLength}
-          pattern={Pattern}
+          pattern={pattern}
           onChange={handle}
           required={required}
           disabled={readonly}
