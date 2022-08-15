@@ -97,7 +97,7 @@
           "parentClass": "col-md-12",
           "classNames": "form-control",
           "id": "",
-          "placeholder": "select your birth date",
+          "placeholder": "dd/mm/yyyy",
           "defaultValue": "",
           "min": "1900-01-01",
           "max": "2022-07-22",

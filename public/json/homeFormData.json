@@ -30,6 +30,14 @@
         }
       },
       {
+        "field": "ElementBox",
+        "data": {
+          "tag": "p",
+          "id": { "id": "app" },
+          "desc": "First element load here"
+        }
+      },
+      {
         "field": "InputBox",
         "data": {
           "label": "Input type : Number",

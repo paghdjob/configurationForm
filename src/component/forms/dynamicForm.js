@@ -8,6 +8,7 @@ import {
   DateBox,
   FileBox,
   SelectBox,
+  ElementBox
 } from "./index";
 
 const DynamicForm = (props) => {
@@ -31,6 +32,7 @@ const DynamicForm = (props) => {
     DateBox: DateBox,
     FileBox: FileBox,
     SelectBox: SelectBox,
+    ElementBox: ElementBox
   };
   useEffect(() => {
     props.data(multiForms);
