@@ -1,16 +1,16 @@
 /* "SelectBox" type support => SelectBox */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { incrementByAmounts } from "../../store/multiFormStore";
 import ApiCall from "./api";
 
 const SelectBox = (props) => {
+  const [list, setList] = useState(props.info.list);
   const multiForms = useSelector(
     (state) => state.multiForm.multiForm[props.formName]
   );
   const dispatch = useDispatch();
 
-//  console.log("multiForms-->", multiForms);
   let {
     type,
     fieldname,
@@ -18,20 +18,24 @@ const SelectBox = (props) => {
     classNames,
     id,
     readonly,
-    list,
+    // list,
     defaultValue,
     label,
     api,
     apiProperties,
   } = props.info;
- // console.log("multiselect props.info", props.info);
+  // console.log("multiselect props.info", props.info);
 
   if (api) {
     useEffect(() => {
-      // console.log("apiProperties-->", apiProperties.URL);
-      ApiCall(apiProperties.URL).then((res) => {
-        list = res;
-        console.log("----res-->", list);
+      // if(multiForms && multiForms.Country) {
+      //   apiProperties.param = multiForms.Country
+      console.log("apiProperties-->", apiProperties);
+      // }
+    
+      const url = `${apiProperties.URL}?param=${apiProperties.param}` ;
+      ApiCall(url).then((res) => {
+        setList(res);
       });
     }, []);
   }
@@ -58,6 +62,7 @@ const SelectBox = (props) => {
         })
       );
     } else {
+     // console.log('single select -->',props.formName, fieldname, e.target.value)
       dispatch(
         incrementByAmounts({
           formName: props.formName,
@@ -70,30 +75,31 @@ const SelectBox = (props) => {
 
   return (
     <>
-      <div className="form-check form-check-inline">
-        <div className={parentClass}>
-          <label className="form-check-label">{label}</label>
-          <select
-            className={classNames}
-            id={id}
-            name={fieldname}
-            onChange={handle}
-            disabled={readonly}
-            defaultValue={defaultValue}
-          >
-            {list.map((data, index) => {
+      <div className={parentClass}>
+        <label className="form-label">{label}</label>
+        <select
+          className={classNames}
+          id={id}
+          name={fieldname}
+          onChange={handle}
+          disabled={readonly}
+          defaultValue={defaultValue}
+        >
+          <option key={0} value="">
+            please select
+          </option>
+          {list &&
+            list.map((data, index) => {
               return (
                 <option
                   key={index}
                   value={data.key}
-                  // selected={data.key === defaultValue ? true : false}
                 >
                   {data.val}
                 </option>
               );
             })}
-          </select>
-        </div>
+        </select>
       </div>
     </>
   );

@@ -9,6 +9,56 @@
     "text": "Sign up Details",
     "fields": [
       {
+        "field": "SelectBox",
+        "data": {
+          "label": "Country",
+          "type": "select",
+          "fieldname": "Country",
+          "parentClass": "col-md-6",
+          "classNames": "form-select",
+          "id": "",
+          "defaultValue": "",
+          "readonly": false,
+          "required": true,
+          "list": [
+            { "key": "IN", "val": "India" },
+            { "key": "ID", "val": "Indonesi" },
+            { "key": "IQ", "val": "Irak" },
+            { "key": "IR", "val": "Iran" }
+          ],
+          "api": true,
+          "apiProperties": {
+            "URL": "./json/countries.json",
+            "param": "india"
+          }
+        }
+      },
+      {
+        "field": "SelectBox",
+        "data": {
+          "label": "City",
+          "type": "select",
+          "fieldname": "City",
+          "parentClass": "col-md-6",
+          "classNames": "form-select",
+          "id": "",
+          "defaultValue": "India",
+          "readonly": false,
+          "required": true,
+          "list": [
+            { "key": "IN", "val": "India" },
+            { "key": "ID", "val": "Indonesi" },
+            { "key": "IQ", "val": "Irak" },
+            { "key": "IR", "val": "Iran" }
+          ],
+          "api": true,
+          "apiProperties": {
+            "URL": "./json/cities.json",
+            "param": "India"
+          }
+        }
+      },
+      {
         "field": "InputBox",
         "data": {
           "label": "Telephone",
