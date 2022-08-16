@@ -47,7 +47,7 @@ const FileBox = (props) => {
   };
 
   return (
-    <>
+  
       <div className={parentClass}>
         <label className="form-label">{label}</label>
         <input
@@ -69,7 +69,7 @@ const FileBox = (props) => {
         />
         <div className="valid-feedback form-text text-muted">Looks good!</div>
       </div>
-    </>
+    
   );
 };
 

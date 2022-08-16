@@ -45,7 +45,6 @@ const TextareaBox = (props) => {
   };
 
   return (
-    <>
       <div className={parentClass}>
         <label className="form-label">{label}</label>
         <textarea
@@ -68,7 +67,6 @@ const TextareaBox = (props) => {
         ></textarea>
         <div className="valid-feedback form-text text-muted">Looks good!</div>
       </div>
-    </>
   );
 };
 

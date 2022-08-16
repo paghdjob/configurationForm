@@ -74,7 +74,6 @@ const SelectBox = (props) => {
   };
 
   return (
-    <>
       <div className={parentClass}>
         <label className="form-label">{label}</label>
         <select
@@ -101,7 +100,6 @@ const SelectBox = (props) => {
             })}
         </select>
       </div>
-    </>
   );
 };
 

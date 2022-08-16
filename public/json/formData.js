@@ -1,11 +1,4 @@
-/* "InputBox" type support => text, password, hidden, email, number, tel, range, search, color, url,
-"ButtonBox" type support => button, reset, submit,
-"CheckBox" type support => checkbox, radio,
-"DateBox" type support =>  date, datetime-local, month, time, week
-"Filebox" type support  => file, image, any 
-"TextareaBox" type support => textareaBox */
-
-const formData = [
+[
   {
     field: "InputBox",
     data: {
@@ -221,4 +214,3 @@ const formData = [
     },
   },
 ];
-export default formData;

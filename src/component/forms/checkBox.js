@@ -61,27 +61,25 @@ const CheckBox = (props) => {
   };
 
   return (
-    <>
-      <div className={parentClass}>
-        {list.map((data, index) => {
-          return (
-            <div key={index} className="form-check form-check-inline">
-              <input
-                className={classNames}
-                type={type}
-                id={id}
-                name={fieldname}
-                onChange={handle}
-                disabled={readonly}
-                value={data}
-                checked={isFlag(data, type, defaultValue)}
-              />
-              <label className="form-check-label">{data}</label>
-            </div>
-          );
-        })}
-      </div>
-    </>
+    <div className={parentClass}>
+      {list.map((data, index) => {
+        return (
+          <div key={index} className="form-check form-check-inline">
+            <input
+              className={classNames}
+              type={type}
+              id={id}
+              name={fieldname}
+              onChange={handle}
+              disabled={readonly}
+              value={data}
+              checked={isFlag(data, type, defaultValue)}
+            />
+            <label className="form-check-label">{data}</label>
+          </div>
+        );
+      })}
+    </div>
   );
 };
 

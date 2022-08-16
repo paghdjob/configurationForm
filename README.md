@@ -26,6 +26,7 @@ Import a library file :
 ``` 
 ### Import Library 
 pass multiFormData form data as you required :
+More example, please follow this json file : https://github.com/paghdjob/configurationForm/tree/main/public/json
 ```js
    [
   {
@@ -153,5 +154,17 @@ pass multiFormData form data as you required :
   },
 ]
 ``` 
+
+### Field spectific on compoment design 
+Example => field: "InputBox",
+ 
+```js
+"InputBox" type support => text, password, hidden, email, number, tel, range, search, color, url,
+"ButtonBox" type support => button, reset, submit,
+"CheckBox" type support => checkbox, radio,
+"DateBox" type support =>  date, datetime-local, month, time, week
+"Filebox" type support  => file, image, any 
+"TextareaBox" type support => textareaBox
+```
 
 ### Incase you face any problem or need help, please contact on paghdjob@gmail.com
