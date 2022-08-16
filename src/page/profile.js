@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import DynamicForm from "../component/forms/dynamicForm";
-import ApiCall from '../component/forms/api'
+import ApiCall from "../component/forms/api";
 
 function Profile() {
   const [multiFormData, setMultiFormData] = useState([]);
-  useEffect(()=>{
-    ApiCall('./json/profileFormData.json').then(data => {
+  useEffect(() => {
+    ApiCall("./json/profileFormData.json").then((data) => {
       setMultiFormData(data);
-  })
-  },[])
+    });
+  }, []);
 
   const formData = (data) => {
-    console.log("Data=>", data)
-  }
+    console.log("Data=>", data);
+  };
 
   return (
     <div className="container">

@@ -22,7 +22,7 @@ const InputBox = (props) => {
     max,
     minLength,
     maxLength,
-//    pattern,
+    //    pattern,
     readonly,
     required,
   } = props.info;
@@ -45,29 +45,27 @@ const InputBox = (props) => {
   };
 
   return (
-   
-      <div key={fieldname} className={parentClass}>
-        <label className="form-label">{label}</label>
-        <input
-          className={classNames}
-          type={type}
-          id={id}
-          name={fieldname}
-          placeholder={placeholder}
-          //  ref={myRef}
-          min={min}
-          max={max}
-          minLength={minLength}
-          maxLength={maxLength}
-          //  pattern={pattern}
-          onChange={handle}
-          required={required}
-          disabled={readonly}
-          value={defaultValue}
-        />
-        <div className="valid-feedback form-text text-muted">Looks good!</div>
-      </div>
-   
+    <div key={fieldname} className={parentClass}>
+      <label className="form-label">{label}</label>
+      <input
+        className={classNames}
+        type={type}
+        id={id}
+        name={fieldname}
+        placeholder={placeholder}
+        //  ref={myRef}
+        min={min}
+        max={max}
+        minLength={minLength}
+        maxLength={maxLength}
+        //  pattern={pattern}
+        onChange={handle}
+        required={required}
+        disabled={readonly}
+        value={defaultValue}
+      />
+      <div className="valid-feedback form-text text-muted">Looks good!</div>
+    </div>
   );
 };
 

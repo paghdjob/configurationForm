@@ -3,32 +3,38 @@
 library for generating forms dynamically using JSON.
 
 ## Demo URL :
-More example, please visit a our website 
+
+More example, please visit a our website
 https://configuration-forms.herokuapp.com/
 
-### Import Library 
+### Import Library
+
 Import a library file :
+
 ```js
- import DynamicForm from "../component/forms/dynamicForm";
+import DynamicForm from "../component/forms/dynamicForm";
 ```
 
-### Import Library 
+### Import Library
+
 Import a library file :
+
 ```js
-  function Example() {
-    const formData = (data) => {
-        console.log("form return data=>", data)
-    }
-  return (
-      <DynamicForm multiFormData={multiFormData} data={formData} />
-    );
+function Example() {
+  const formData = (data) => {
+    console.log("form return data=>", data);
+  };
+  return <DynamicForm multiFormData={multiFormData} data={formData} />;
 }
-``` 
-### Import Library 
+```
+
+### Import Library
+
 pass multiFormData form data as you required :
 More example, please follow this json file : https://github.com/paghdjob/configurationForm/tree/main/public/json
+
 ```js
-   [
+[
   {
     formName: "signupform",
     action: "#",
@@ -152,18 +158,19 @@ More example, please follow this json file : https://github.com/paghdjob/configu
       },
     ],
   },
-]
-``` 
+];
+```
 
-### Field spectific on compoment design 
+### Field spectific on compoment design
+
 Example => field: "InputBox",
- 
+
 ```js
 "InputBox" type support => text, password, hidden, email, number, tel, range, search, color, url,
 "ButtonBox" type support => button, reset, submit,
 "CheckBox" type support => checkbox, radio,
 "DateBox" type support =>  date, datetime-local, month, time, week
-"Filebox" type support  => file, image, any 
+"Filebox" type support  => file, image, any
 "TextareaBox" type support => textareaBox
 ```
 

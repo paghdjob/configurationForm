@@ -11,7 +11,6 @@ const ForgotPwd = lazy(() => import("../page/forgotPwd"));
 const Profile = lazy(() => import("../page/profile"));
 const Loading = lazy(() => import("../component/loading"));
 
-
 function AppRouting() {
   return (
     <React.Fragment>

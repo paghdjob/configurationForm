@@ -25,7 +25,7 @@ const ButtonBox = (props) => {
   }
   const handle = (e) => {
     console.log("---button Value--->", fieldname, e.target.value);
-    e.preventDefault()
+    e.preventDefault();
     dispatch(
       incrementByAmounts({
         formName: props.formName,
@@ -33,7 +33,6 @@ const ButtonBox = (props) => {
         value: e.target.value,
       })
     );
-    
   };
 
   return (

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: 'yogesh',
+  value: "yogesh",
 };
 
 export const formStoreReducer = createSlice({
@@ -15,8 +15,8 @@ export const formStoreReducer = createSlice({
       state.value -= 1;
     },
     incrementByAmount: (state, action) => {
-        console.log('incrementByAmount---',state, action.payload)
-        const p = action.payload.username;
+      console.log("incrementByAmount---", state, action.payload);
+      const p = action.payload.username;
       state.value = p;
     },
   },

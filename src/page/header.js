@@ -16,16 +16,19 @@ const menuList = [
   {
     label: "Login",
     nav: "/login",
-  },{
+  },
+  {
     label: "Sign Up",
     nav: "/signup",
-  },{
+  },
+  {
     label: "Forgot Password",
     nav: "/forgotpwd",
-  },{
+  },
+  {
     label: "Profile",
     nav: "/profile",
-  }
+  },
 ];
 
 export default function Header() {

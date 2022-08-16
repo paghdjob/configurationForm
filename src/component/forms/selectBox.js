@@ -30,10 +30,10 @@ const SelectBox = (props) => {
     useEffect(() => {
       // if(multiForms && multiForms.Country) {
       //   apiProperties.param = multiForms.Country
-      console.log("apiProperties-->", apiProperties);
+      // console.log("apiProperties-->", apiProperties);
       // }
-    
-      const url = `${apiProperties.URL}?param=${apiProperties.param}` ;
+
+      const url = `${apiProperties.URL}?param=${apiProperties.param}`;
       ApiCall(url).then((res) => {
         setList(res);
       });
@@ -62,7 +62,7 @@ const SelectBox = (props) => {
         })
       );
     } else {
-     // console.log('single select -->',props.formName, fieldname, e.target.value)
+      // console.log('single select -->',props.formName, fieldname, e.target.value)
       dispatch(
         incrementByAmounts({
           formName: props.formName,
@@ -74,32 +74,29 @@ const SelectBox = (props) => {
   };
 
   return (
-      <div className={parentClass}>
-        <label className="form-label">{label}</label>
-        <select
-          className={classNames}
-          id={id}
-          name={fieldname}
-          onChange={handle}
-          disabled={readonly}
-          defaultValue={defaultValue}
-        >
-          <option key={0} value="">
-            please select
-          </option>
-          {list &&
-            list.map((data, index) => {
-              return (
-                <option
-                  key={index}
-                  value={data.key}
-                >
-                  {data.val}
-                </option>
-              );
-            })}
-        </select>
-      </div>
+    <div className={parentClass}>
+      <label className="form-label">{label}</label>
+      <select
+        className={classNames}
+        id={id}
+        name={fieldname}
+        onChange={handle}
+        disabled={readonly}
+        defaultValue={defaultValue}
+      >
+        <option key={0} value="">
+          please select
+        </option>
+        {list &&
+          list.map((data, index) => {
+            return (
+              <option key={index} value={data.key}>
+                {data.val}
+              </option>
+            );
+          })}
+      </select>
+    </div>
   );
 };
 
