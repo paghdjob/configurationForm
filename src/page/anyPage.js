@@ -20,7 +20,6 @@ function AnyPage(props) {
 
   return (
     <div className="container">
-      <h1>AnyPage</h1>
       <DynamicForm multiFormData={multiFormData} data={formData} />
     </div>
   );
