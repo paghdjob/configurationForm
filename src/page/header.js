@@ -19,7 +19,7 @@ const menuList = [
   },
   {
     label: "Forgot Password",
-    nav: "/forgotpwd",
+    nav: "/forgotpassword",
   },
   {
     label: "Profile",
