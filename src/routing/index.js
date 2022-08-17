@@ -10,13 +10,15 @@ function AppRouting() {
   return (
     <React.Fragment>
       <Header />
-      <Suspense fallback={<Loading />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="*" element={<AnyPage />} />
-        </Routes>
-      </Suspense>
+      <div className="container">
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="*" element={<AnyPage />} />
+          </Routes>
+        </Suspense>
+      </div>
     </React.Fragment>
   );
 }

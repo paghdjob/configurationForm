@@ -8,21 +8,21 @@ function AnyPage(props) {
 
   const [multiFormData, setMultiFormData] = useState([]);
   useEffect(() => {
-    ApiCall(`./json${location.pathname}FormData.json`).then((data) => {
-      console.log("data->", data);
-      setMultiFormData(data);
-    });
+    ApiCall(`./json${location.pathname}FormData.json`)
+      .then((data) => {
+        console.log("data->", data);
+        setMultiFormData(data);
+      })
+      .catch((err) => {
+        console.log("err-->", err);
+      });
   }, [location.pathname]);
 
   const formData = (data) => {
     console.log("Data=>", data);
   };
 
-  return (
-    <div className="container">
-      <DynamicForm multiFormData={multiFormData} data={formData} />
-    </div>
-  );
+  return <DynamicForm multiFormData={multiFormData} data={formData} />;
 }
 
 export default AnyPage;

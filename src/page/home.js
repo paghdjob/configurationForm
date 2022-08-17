@@ -14,11 +14,7 @@ function Home() {
     console.log("Data=>", data);
   };
 
-  return (
-    <div className="container">
-      <DynamicForm multiFormData={multiFormData} data={formData} />
-    </div>
-  );
+  return <DynamicForm multiFormData={multiFormData} data={formData} />;
 }
 
 export default Home;

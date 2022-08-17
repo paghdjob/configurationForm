@@ -32,9 +32,72 @@
       {
         "field": "ElementBox",
         "data": {
-          "tag": "p",
-          "id": { "id": "app" },
-          "desc": "First element load here"
+          "tag": "div",
+          "id": { "className": "col-md-12" },
+          "desc": "",
+          "child": {
+            "tag": "div",
+            "id": { "className": "card" },
+            "desc": "",
+            "child": [
+              {
+                "tag": "div",
+                "id": { "className": "card-body", "key": 0 },
+                "desc": "",
+                "child": {
+                  "tag": "h5",
+                  "id": { "className": "card-title", "key": 1 },
+                  "desc": "Card demo list",
+                  "child": ""
+                }
+              },
+              {
+                "tag": "ul",
+                "id": { "className": "list-group list-group-flush", "key": 2 },
+                "desc": "",
+                "child": [
+                  {
+                    "tag": "li",
+                    "id": { "className": "list-group-item", "key": 3 },
+                    "desc": "An item"
+                  },
+                  {
+                    "tag": "li",
+                    "id": { "className": "list-group-item", "key": 4 },
+                    "desc": "A Second"
+                  },
+                  {
+                    "tag": "li",
+                    "id": { "className": "list-group-item", "key": 5 },
+                    "desc": "A third"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "field": "ElementBox",
+        "data": {
+          "tag": "div",
+          "id": { "className": "col-md-12" },
+          "desc": "",
+          "child": {
+            "tag": "div",
+            "id": { "className": "card" },
+            "desc": "",
+            "child": {
+              "tag": "div",
+              "id": { "className": "card-header" },
+              "desc": "Featured",
+              "child": {
+                "tag": "h5",
+                "id": { "className": "card-title" },
+                "desc": "Special title treatment"
+              }
+            }
+          }
         }
       },
       {
