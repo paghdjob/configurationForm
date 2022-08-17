@@ -175,3 +175,9 @@ Example => field: "InputBox",
 ```
 
 ### Incase you face any problem or need help, please contact on paghdjob@gmail.com
+
+npm i
+
+npm run start
+
+npx prettier --write .

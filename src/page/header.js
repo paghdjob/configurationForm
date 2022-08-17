@@ -10,10 +10,6 @@ const menuList = [
     nav: "/about",
   },
   {
-    label: "Contact",
-    nav: "/contact",
-  },
-  {
     label: "Login",
     nav: "/login",
   },
