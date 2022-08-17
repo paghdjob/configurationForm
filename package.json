@@ -1,6 +1,6 @@
 {
   "name": "form-generator-json-app",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "library for generating forms dynamically using JSON.",
   "keywords": [
     "form generator json",
