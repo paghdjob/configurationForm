@@ -3,12 +3,12 @@ import DynamicForm from "../component/forms/dynamicForm";
 import ApiCall from "../component/forms/api";
 import { useLocation } from "react-router-dom";
 
-function AnyPage(props) {
+function CmsPage(props) {
   let location = useLocation();
 
   const [multiFormData, setMultiFormData] = useState([]);
   useEffect(() => {
-    ApiCall(`./json${location.pathname}FormData.json`)
+    ApiCall(`${window.origin}/json${location.pathname}FormData.json`)
       .then((data) => {
         console.log("data->", data);
         setMultiFormData(data);
@@ -36,4 +36,4 @@ function AnyPage(props) {
   );
 }
 
-export default AnyPage;
+export default CmsPage;

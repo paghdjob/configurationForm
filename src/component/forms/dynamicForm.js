@@ -39,38 +39,54 @@ const DynamicForm = (props) => {
   }, [multiForms]);
 
   return (
-    <div className="container">
+    <>
       {props.multiFormData.map((item, index) => {
+        console.log("item-->", item);
         return (
-          <div key={index} className="card">
-            <div className="card-header">
-              <h5 className="card-title">{item.title}</h5>
-              <p>{item.subtitile}</p>
-            </div>
-            <div className="card-body">
-              <form
-                action={item.action}
-                method={item.method}
-                name={item.formName}
-                className={item.classNames}
-                noValidate
-              >
-                {item.fields.map((items, index) => {
-                  const Component = components[items.field];
-                  return (
-                    <Component
-                      key={index}
-                      info={items.data}
-                      formName={item.formName}
-                    />
-                  );
-                })}
-              </form>
-            </div>
-          </div>
+          <>
+            {item.pageName &&
+              item.fields.map((items, index) => {
+                const Component = components[items.field];
+                return (
+                  <Component
+                    key={index}
+                    info={items.data}
+                    formName={item.formName}
+                  />
+                );
+              })}
+            {item.formName && (
+              <div key={index} className="card">
+                <div className="card-header">
+                  <h5 className="card-title">{item.title}</h5>
+                  <p>{item.subtitile}</p>
+                </div>
+                <div className="card-body">
+                  <form
+                    action={item.action}
+                    method={item.method}
+                    name={item.formName}
+                    className={item.classNames}
+                    noValidate
+                  >
+                    {item.fields.map((items, index) => {
+                      const Component = components[items.field];
+                      return (
+                        <Component
+                          key={index}
+                          info={items.data}
+                          formName={item.formName}
+                        />
+                      );
+                    })}
+                  </form>
+                </div>
+              </div>
+            )}
+          </>
         );
       })}
-    </div>
+    </>
   );
 };
 

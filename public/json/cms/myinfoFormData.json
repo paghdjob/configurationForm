@@ -1,0 +1,187 @@
+[
+  {
+    "pageName": "create new page",
+    "title": "Custom components",
+    "fields": [
+      {
+        "field": "ElementBox",
+        "data": {
+          "tag": "main",
+          "id": { "className": "inner cover" },
+          "desc": "",
+          "child": {
+            "tag": "h1",
+            "id": { "className": "cover-heading" },
+            "desc": "Cover your page.",
+            "child": [
+              {
+                "tag": "p",
+                "id": { "className": "lead" },
+                "desc": "Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.",
+                "child": ""
+              },
+              {
+                "tag": "a",
+                "id": { "href": "/login", "className": "btn btn-lg btn-secondary" },
+                "desc": "Learn more"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "field": "ElementBox",
+        "data": {
+          "tag": "div",
+          "id": { "className": "col-md-12" },
+          "desc": "",
+          "child": {
+            "tag": "div",
+            "id": { "className": "card" },
+            "desc": "",
+            "child": [
+              {
+                "tag": "div",
+                "id": { "className": "card-body", "key": 0 },
+                "desc": "",
+                "child": {
+                  "tag": "h5",
+                  "id": { "className": "card-title", "key": 1 },
+                  "desc": "Card demo list",
+                  "child": ""
+                }
+              },
+              {
+                "tag": "ul",
+                "id": { "className": "list-group list-group-flush", "key": 2 },
+                "desc": "",
+                "child": [
+                  {
+                    "tag": "li",
+                    "id": { "className": "list-group-item", "key": 3 },
+                    "desc": "An item"
+                  },
+                  {
+                    "tag": "li",
+                    "id": { "className": "list-group-item", "key": 4 },
+                    "desc": "A Second"
+                  },
+                  {
+                    "tag": "li",
+                    "id": { "className": "list-group-item", "key": 5 },
+                    "desc": "A third"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "field": "ElementBox",
+        "data": {
+          "tag": "div",
+          "id": { "className": "col-md-12" },
+          "desc": "",
+          "child": {
+            "tag": "div",
+            "id": { "className": "card" },
+            "desc": "",
+            "child": {
+              "tag": "div",
+              "id": { "className": "card-header" },
+              "desc": "Featured",
+              "child": {
+                "tag": "h5",
+                "id": { "className": "card-title" },
+                "desc": "Special title treatment"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formName": "exampleform",
+    "action": "#",
+    "method": "GET",
+    "classNames": "row g-3 was-validated",
+    "title": "Example form",
+    "subtitile": "The definition of form is the shape of a person, animal or thing or a piece of paperwork that needs to be filled out. An example of form is the circular shape of an apple. An example of form is a job application. The shape and structure of an object.",
+    "text": "Form is the shape, visual appearance, or configuration of an object",
+    "fields": [
+      {
+        "field": "ElementBox",
+        "data": {
+          "tag": "div",
+          "id": { "className": "col-md-12" },
+          "desc": "",
+          "child": {
+            "tag": "div",
+            "id": { "className": "card" },
+            "desc": "",
+            "child": [
+              {
+                "tag": "div",
+                "id": { "className": "card-body", "key": 0 },
+                "desc": "",
+                "child": {
+                  "tag": "h5",
+                  "id": { "className": "card-title", "key": 1 },
+                  "desc": "Card demo list",
+                  "child": ""
+                }
+              },
+              {
+                "tag": "ul",
+                "id": { "className": "list-group list-group-flush", "key": 2 },
+                "desc": "",
+                "child": [
+                  {
+                    "tag": "li",
+                    "id": { "className": "list-group-item", "key": 3 },
+                    "desc": "An item"
+                  },
+                  {
+                    "tag": "li",
+                    "id": { "className": "list-group-item", "key": 4 },
+                    "desc": "A Second"
+                  },
+                  {
+                    "tag": "li",
+                    "id": { "className": "list-group-item", "key": 5 },
+                    "desc": "A third"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "field": "ElementBox",
+        "data": {
+          "tag": "div",
+          "id": { "className": "col-md-12" },
+          "desc": "",
+          "child": {
+            "tag": "div",
+            "id": { "className": "card" },
+            "desc": "",
+            "child": {
+              "tag": "div",
+              "id": { "className": "card-header" },
+              "desc": "Featured",
+              "child": {
+                "tag": "h5",
+                "id": { "className": "card-title" },
+                "desc": "Special title treatment"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+]

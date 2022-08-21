@@ -5,6 +5,7 @@ const About = lazy(() => import("../page/about"));
 const Header = lazy(() => import("../page/header"));
 const Loading = lazy(() => import("../component/loading"));
 const AnyPage = lazy(() => import("../page/anyPage"));
+const CmsPage = lazy(() => import("../page/cmsPage"));
 
 function AppRouting() {
   return (
@@ -15,6 +16,7 @@ function AppRouting() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
+            <Route path="/cms/:pageName" element={<CmsPage />} />
             <Route path="*" element={<AnyPage />} />
           </Routes>
         </Suspense>

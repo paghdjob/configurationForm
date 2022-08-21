@@ -29,6 +29,10 @@ const menuList = [
     label: "Profile",
     nav: "/profile",
   },
+  {
+    label: "CMS page",
+    nav: "/cms/myinfo",
+  },
 ];
 
 export default function Header() {
