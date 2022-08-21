@@ -41,7 +41,6 @@ const DynamicForm = (props) => {
   return (
     <>
       {props.multiFormData.map((item, index) => {
-        console.log("item-->", item);
         return (
           <>
             {item.pageName &&
