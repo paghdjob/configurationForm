@@ -181,3 +181,6 @@ npm i
 npm run start
 
 npx prettier --write .
+
+### download URL :
+https://www.npmjs.com/package/form-generator-json-app
