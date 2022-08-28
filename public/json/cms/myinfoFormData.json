@@ -38,7 +38,7 @@
                   "href": "/login",
                   "className": "btn btn-lg btn-secondary"
                 },
-                "desc": "Learn more"
+                "desc": "Login page"
               }
             ]
           }
@@ -98,21 +98,38 @@
           "tag": "div",
           "id": { "className": "col-md-12" },
           "desc": "",
-          "child": {
-            "tag": "div",
-            "id": { "className": "card" },
-            "desc": "",
-            "child": {
+          "child": [
+            {
               "tag": "div",
-              "id": { "className": "card-header" },
-              "desc": "Featured",
+              "id": { "className": "card" },
+              "desc": "",
               "child": {
-                "tag": "h5",
-                "id": { "className": "card-title" },
-                "desc": "Special title treatment"
+                "tag": "div",
+                "id": { "className": "card-header" },
+                "desc": "Important globals",
+                "child": {
+                  "tag": "p",
+                  "id": {},
+                  "desc": "Bootstrap employs a handful of important global styles and settings, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in."
+                }
+              }
+            },
+            {
+              "tag": "div",
+              "id": { "className": "card" },
+              "desc": "",
+              "child": {
+                "tag": "div",
+                "id": { "className": "card-header" },
+                "desc": "Featured",
+                "child": {
+                  "tag": "h5",
+                  "id": { "className": "card-title" },
+                  "desc": "Special title treatment"
+                }
               }
             }
-          }
+          ]
         }
       }
     ]

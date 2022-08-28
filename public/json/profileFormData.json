@@ -3,7 +3,7 @@
     "formName": "profileform",
     "action": "#",
     "method": "GET",
-    "classNames": "row g-3 was-validated",
+    "classNames": "row g-3",
     "title": "Personal Information",
     "subtitile": "",
     "text": "Sign up Details",

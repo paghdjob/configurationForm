@@ -8,7 +8,7 @@ function AnyPage(props) {
 
   const [multiFormData, setMultiFormData] = useState([]);
   useEffect(() => {
-    ApiCall(`./json${location.pathname}FormData.json`)
+    ApiCall(`${window.origin}/json${location.pathname}FormData.json`)
       .then((data) => {
         console.log("data->", data);
         setMultiFormData(data);
